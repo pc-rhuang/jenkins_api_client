@@ -173,7 +173,9 @@ module JenkinsApi
               "port" => params[:slave_port],
               "username" => params[:slave_user],
               "privatekey" => params[:private_key_file],
-              "credentialsId" => params[:credentials_id]
+              "credentialsId" => params[:credentials_id],
+              "jvmOptions" => params[:jvmOptions]
+
             }
           }.to_json
         }
